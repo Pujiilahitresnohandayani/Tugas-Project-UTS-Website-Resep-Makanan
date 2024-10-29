@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag dan link ke file CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"> <!-- Tautkan ke CSS untuk styling -->
+    <title>Sign In - Resep Makanan</title>
+</head>
+<body>
+    <!-- Bagian utama halaman Sign In -->
+    <main class="signin-container">
+        <!-- Form Sign In -->
+        <section class="signin-form">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo Resep Makanan"> <!-- Logo situs -->
+            </div>
+            
+            <h2>Sign In</h2> <!-- Judul Halaman Sign In -->
+            
+            <!-- Form untuk Sign In -->
+            <form action="dashboard.html" method="POST">
+                <!-- Input Username -->
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+                </div>
+
+                <!-- Input Password -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+                </div>
+
+                <!-- Tombol Sign In -->
+                <button type="submit" class="btn-signin">Sign In</button>
+
+                <!-- Link tambahan untuk bantuan -->
+                <div class="extra-links">
+                    <p>Belum punya akun? <a href="signup.html">Daftar</a></p> <!-- Link ke halaman sign up -->
+                    <p><a href="forgot_password.html">Lupa Password?</a></p> <!-- Link ke halaman lupa password -->
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
