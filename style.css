@@ -11,28 +11,76 @@ body{
     /* height: 10000px; */
 }
 
-.navbar{
+/* Navbar utama */
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem 5%;
+    padding: 0.5rem 5%;
     background-color: orange;
 }
 
-.navbar .logo img{
+/* Logo */
+.navbar .logo img {
     width: 50px;
 }
 
-.navbar ul li{
-    display: inline;
+/* Navigasi */
+.navbar .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .navigation ul li {
     margin-right: 20px;
 }
 
-.navbar a{
+.navbar .navigation ul li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
+
+/* Container tombol */
+.action-buttons {
+    display: flex;
+    gap: 15px; /* Jarak antar tombol */
+}
+
+/* Tombol Sign In */
+.action-buttons .sci {
+    text-decoration: none;
+    color: white;
+    background-color: #008cf7;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons .sci:hover {
+    background-color: #005bb5;
+}
+
+/* Tombol Login */
+.action-buttons .login {
+    text-decoration: none;
+    color: white;
+    background-color: #008cf7;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons .login:hover {
+    background-color: #005bb5;
+}
+
 
 /* bagian hero section */
 .hero__section .card{
@@ -86,6 +134,80 @@ body{
 .sliders .card img{
     width: 100%;
     border-radius: 10px;
+}
+
+/* Style untuk halaman Login dan Sign In */
+.login-signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-signup-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #008cf7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-signup-form button:hover {
+    background-color: #005bb5;
+}
+
+.login-signup-form .form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.login-signup-form .form-footer a {
+    text-decoration: none;
+    color: #008cf7;
+    font-size: 14px;
+}
+
+.login-signup-form .form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style untuk error atau success message */
+.message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+.message.success {
+    color: green;
 }
 
 /* Section Menu Resep Makanan */
