@@ -13,3 +13,9 @@ function filterRecipes() {
         }
     }
 }
+
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Example of adding event listeners, etc.
+    console.log("JavaScript loaded");
+});
