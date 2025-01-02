@@ -8,12 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-        <!-- Bagian Header -->
+    <!-- Bagian Header -->
     <header>
         <div class="navbar">
             <!-- Logo Situs -->
             <div class="logo">
-                <img src="img/logo.png" alt="">
+                <img src="img/logo.png" alt="Logo">
             </div>
             
             <!-- Navigasi Utama -->
@@ -25,13 +25,15 @@
                 </ul>
             </div>
             
-            <!-- Tombol Sign In -->
-            <div class="sci">
-                <a href="html/sign in.html">Sign In</a>
+            <!-- Container untuk Tombol -->
+            <div class="action-buttons">
+                <!-- Menghapus PHP include, hanya menampilkan link login -->
+                <a href="html/sign in.html" class="sci">Sign In</a>
+                <a href="html/login.html" class="login">Login</a>
             </div>
         </div>
     </header>
-    
+
     <!-- Konten Utama -->
     <main>
         <!-- Bagian Hero -->
@@ -40,7 +42,7 @@
                 <h3>Temukan Resep Yang Anda Cari</h3>
             </div>
         </section>
-        
+
         <!-- Slider untuk Menampilkan Gambar -->
         <section class="sliders">
             <div class="card">
@@ -69,7 +71,6 @@
 
             </div>
 
-
             <!-- Daftar Resep -->
             <div class="resep__content" id="recipeContainer">
                 <!-- Kartu Resep: Sate Ayam -->
@@ -86,7 +87,7 @@
                         </div>
                     </div>
                 </a>
-                <!-- Kartu Resep: Soto Padang -->
+                                <!-- Kartu Resep: Soto Padang -->
                 <a href="html/detail_menu_soto.html">
                     <div class="card">
                         <div class="thumb">
@@ -287,13 +288,11 @@
         <!-- Bagian Footer -->
         <footer>
             <div class="card">
-                <!-- Logo di Footer -->
                 <div class="logo">
                     <img src="img/logo.png" alt="">
                 </div>
             </div>
             <div class="card">
-            <!-- Bagian Konten di Footer -->
                 <h3>Konten</h3>
                 <ul>
                     <li><a href="">Resep</a></li>
@@ -303,33 +302,9 @@
                     <li><a href="">Resep Makanan</a></li>
                 </ul>
             </div>
-
-            <div class="card">
-            <!-- Bagian Tentang Kami di Footer -->
-                <h3>Tentang Kami</h3>
-                <ul>
-                    <li><a href="">Panduan Resep</a></li>
-                    <li><a href="">Kebijakan Privasi</a></li>
-                    <li><a href="">Syarat Dan Ketentuan</a></li>
-                    <li><a href="">Masukan dan Bantuan</a></li>
-                </ul>
-            </div>
-            
-            <div class="card">
-            <!--Bagian Kontak di Footer-->
-                <h3>Kontak</h3>
-                <ul>
-                    <li><a href="">012345678910</a></li>
-                    <li><a href="">Bumbu</a></li>
-                    <li><a href="">Resep Kreasi</a></li>
-                    <li><a href="">Snack & Cemilan</a></li>
-                </ul>
-            </div>
         </footer>
-
-
-
     </main>
+    
     <!-- Link ke file JavaScript eksternal -->
     <script src="script/script.js"></script>
 
